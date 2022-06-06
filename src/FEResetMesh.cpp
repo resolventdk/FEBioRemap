@@ -71,7 +71,7 @@ FEResetMesh::FEResetMesh(FEModel* fem) : FEMeshAdaptor(fem), m_topo(nullptr)
 	m_maxiter = 1;
 	m_maxelem = -1;
 
-	m_bmap_current = false; // do not use current mesh configuration for mapping
+	m_bmap_current = true; // use current mesh configuration for mapping
 }
 
 FEResetMesh::~FEResetMesh()

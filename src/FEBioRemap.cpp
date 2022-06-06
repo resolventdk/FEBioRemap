@@ -62,7 +62,7 @@ FECORE_PLUGIN void PluginInitialize(FECoreKernel& fecore)
 	// criteria
 	REGISTER_FECORE_CLASS(FEFixedTimeCriterion, "fixed dt");
 	REGISTER_FECORE_CLASS(FEQualityCriterion, "quality");
-	REGISTER_FECORE_CLASS(FEAnyCriterion, "any min-max filter");
+	REGISTER_FECORE_CLASS(FEAnyCriterion, "min-max");
 
 	// classes derived from FEPlotData
 	REGISTER_FECORE_CLASS(FEPlotQuality, "quality");

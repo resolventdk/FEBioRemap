@@ -51,5 +51,5 @@ file(GLOB HDR_FEBioRemap "src/*.h")
 file(GLOB SRC_FEBioRemap "src/*.cpp")
 add_library(FEBioRemap SHARED ${HDR_FEBioRemap} ${SRC_FEBioRemap})
 
-target_link_libraries(FEBioRemap febiomech fecore)
+target_link_libraries(FEBioRemap mmg febiomech fecore)
 target_include_directories(FEBioRemap PRIVATE ${FEBIO_ROOT} ${MMG_INC_DIR})
